@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0423C420D2E3160055EBCD /* MKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0423C320D2E3160055EBCD /* MKDAppDelegate.m */; };
+		DA0423CA20D2E3160055EBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0423C820D2E3160055EBCD /* Main.storyboard */; };
+		DA0423CC20D2E3180055EBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0423CB20D2E3180055EBCD /* Assets.xcassets */; };
+		DA0423CF20D2E3180055EBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0423CD20D2E3180055EBCD /* LaunchScreen.storyboard */; };
+		DA0423D220D2E3180055EBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0423D120D2E3180055EBCD /* main.m */; };
+		DA0423DA20D2E4780055EBCD /* MKDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0423D920D2E4780055EBCD /* MKDMainViewController.m */; };
+		DA31808320EAACE6007E76E7 /* MKDCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA31808220EAACE6007E76E7 /* MKDCustomNavigationController.m */; };
+		DA31808720EAAD99007E76E7 /* MKDTintedActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA31808620EAAD99007E76E7 /* MKDTintedActionButton.m */; };
+		DA97F3F520D50D8000B488C8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA97F3F420D50D8000B488C8 /* Icon.png */; };
+		DA97F3F820D5B32400B488C8 /* MKDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F3F720D5B32400B488C8 /* MKDDetailViewController.m */; };
+		DAC93F0220ED4E2C008C85F5 /* MKDActionBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC93F0120ED4E2C008C85F5 /* MKDActionBarNavigationController.m */; };
+		DAC93F0320ED4E2C008C85F5 /* MKDActionBarNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAC93F0020ED4E2C008C85F5 /* MKDActionBarNavigationController.h */; };
+		DAC93F0720ED4E63008C85F5 /* MKDActionButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86591120D664CE00293E02 /* MKDActionButtonItem.m */; };
+		DAC93F0820ED4E63008C85F5 /* MKDActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86590E20D664CE00293E02 /* MKDActionBar.m */; };
+		DAC93F0920ED4E9F008C85F5 /* MKDActionButtonHosting.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA86590F20D664CE00293E02 /* MKDActionButtonHosting.h */; };
+		DAC93F0A20ED4EA1008C85F5 /* MKDActionButtonItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA86591020D664CE00293E02 /* MKDActionButtonItem.h */; };
+		DAC93F0C20ED4EBB008C85F5 /* libMKDActionBarNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC93EFE20ED4E2C008C85F5 /* libMKDActionBarNavigationController.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAC93F0D20ED4FB6008C85F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0423B720D2E3160055EBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC93EFD20ED4E2C008C85F5;
+			remoteInfo = MKDActionBarNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA86590C20D6645100293E02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC93EFC20ED4E2C008C85F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DAC93F0320ED4E2C008C85F5 /* MKDActionBarNavigationController.h in CopyFiles */,
+				DAC93F0920ED4E9F008C85F5 /* MKDActionButtonHosting.h in CopyFiles */,
+				DAC93F0A20ED4EA1008C85F5 /* MKDActionButtonItem.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA0423BF20D2E3160055EBCD /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0423C220D2E3160055EBCD /* MKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDAppDelegate.h; sourceTree = "<group>"; };
+		DA0423C320D2E3160055EBCD /* MKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDAppDelegate.m; sourceTree = "<group>"; };
+		DA0423C920D2E3160055EBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA0423CB20D2E3180055EBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA0423CE20D2E3180055EBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA0423D020D2E3180055EBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0423D120D2E3180055EBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA0423D820D2E4780055EBCD /* MKDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDMainViewController.h; sourceTree = "<group>"; };
+		DA0423D920D2E4780055EBCD /* MKDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDMainViewController.m; sourceTree = "<group>"; };
+		DA31808120EAACE6007E76E7 /* MKDCustomNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDCustomNavigationController.h; sourceTree = "<group>"; };
+		DA31808220EAACE6007E76E7 /* MKDCustomNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDCustomNavigationController.m; sourceTree = "<group>"; };
+		DA31808520EAAD99007E76E7 /* MKDTintedActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDTintedActionButton.h; sourceTree = "<group>"; };
+		DA31808620EAAD99007E76E7 /* MKDTintedActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDTintedActionButton.m; sourceTree = "<group>"; };
+		DA86590D20D664CE00293E02 /* MKDActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDActionBar.h; sourceTree = "<group>"; };
+		DA86590E20D664CE00293E02 /* MKDActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDActionBar.m; sourceTree = "<group>"; };
+		DA86590F20D664CE00293E02 /* MKDActionButtonHosting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDActionButtonHosting.h; sourceTree = "<group>"; };
+		DA86591020D664CE00293E02 /* MKDActionButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDActionButtonItem.h; sourceTree = "<group>"; };
+		DA86591120D664CE00293E02 /* MKDActionButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDActionButtonItem.m; sourceTree = "<group>"; };
+		DA97F3F420D50D8000B488C8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DA97F3F620D5B32400B488C8 /* MKDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDDetailViewController.h; sourceTree = "<group>"; };
+		DA97F3F720D5B32400B488C8 /* MKDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDDetailViewController.m; sourceTree = "<group>"; };
+		DAC93EFE20ED4E2C008C85F5 /* libMKDActionBarNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKDActionBarNavigationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC93F0020ED4E2C008C85F5 /* MKDActionBarNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDActionBarNavigationController.h; sourceTree = "<group>"; };
+		DAC93F0120ED4E2C008C85F5 /* MKDActionBarNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKDActionBarNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA0423BC20D2E3160055EBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC93F0C20ED4EBB008C85F5 /* libMKDActionBarNavigationController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC93EFB20ED4E2C008C85F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA0423B620D2E3160055EBCD = {
+			isa = PBXGroup;
+			children = (
+				DAC93EFF20ED4E2C008C85F5 /* MKDActionBarNavigationController */,
+				DA0423C120D2E3160055EBCD /* ExampleApp */,
+				DA0423C020D2E3160055EBCD /* Products */,
+				DAC93F0B20ED4EBB008C85F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA0423C020D2E3160055EBCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA0423BF20D2E3160055EBCD /* ExampleApp.app */,
+				DAC93EFE20ED4E2C008C85F5 /* libMKDActionBarNavigationController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA0423C120D2E3160055EBCD /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				DA0423C220D2E3160055EBCD /* MKDAppDelegate.h */,
+				DA0423C320D2E3160055EBCD /* MKDAppDelegate.m */,
+				DA0423D820D2E4780055EBCD /* MKDMainViewController.h */,
+				DA0423D920D2E4780055EBCD /* MKDMainViewController.m */,
+				DA97F3F620D5B32400B488C8 /* MKDDetailViewController.h */,
+				DA97F3F720D5B32400B488C8 /* MKDDetailViewController.m */,
+				DA31808420EAAD7A007E76E7 /* MKDCustomNavigationController */,
+				DA0423C820D2E3160055EBCD /* Main.storyboard */,
+				DA0423CB20D2E3180055EBCD /* Assets.xcassets */,
+				DA0423CD20D2E3180055EBCD /* LaunchScreen.storyboard */,
+				DA0423D020D2E3180055EBCD /* Info.plist */,
+				DA97F3F420D50D8000B488C8 /* Icon.png */,
+				DA0423D120D2E3180055EBCD /* main.m */,
+			);
+			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		DA31808420EAAD7A007E76E7 /* MKDCustomNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				DA31808120EAACE6007E76E7 /* MKDCustomNavigationController.h */,
+				DA31808220EAACE6007E76E7 /* MKDCustomNavigationController.m */,
+				DA31808520EAAD99007E76E7 /* MKDTintedActionButton.h */,
+				DA31808620EAAD99007E76E7 /* MKDTintedActionButton.m */,
+			);
+			path = MKDCustomNavigationController;
+			sourceTree = "<group>";
+		};
+		DAC93EFF20ED4E2C008C85F5 /* MKDActionBarNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				DA86590F20D664CE00293E02 /* MKDActionButtonHosting.h */,
+				DA86591020D664CE00293E02 /* MKDActionButtonItem.h */,
+				DA86591120D664CE00293E02 /* MKDActionButtonItem.m */,
+				DAC93F0020ED4E2C008C85F5 /* MKDActionBarNavigationController.h */,
+				DAC93F0120ED4E2C008C85F5 /* MKDActionBarNavigationController.m */,
+				DA86590D20D664CE00293E02 /* MKDActionBar.h */,
+				DA86590E20D664CE00293E02 /* MKDActionBar.m */,
+			);
+			path = MKDActionBarNavigationController;
+			sourceTree = "<group>";
+		};
+		DAC93F0B20ED4EBB008C85F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA0423BE20D2E3160055EBCD /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA0423D520D2E3180055EBCD /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				DA0423BB20D2E3160055EBCD /* Sources */,
+				DA0423BC20D2E3160055EBCD /* Frameworks */,
+				DA0423BD20D2E3160055EBCD /* Resources */,
+				DA86590C20D6645100293E02 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC93F0E20ED4FB6008C85F5 /* PBXTargetDependency */,
+			);
+			name = ExampleApp;
+			productName = MKDBottomActionButtons;
+			productReference = DA0423BF20D2E3160055EBCD /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC93EFD20ED4E2C008C85F5 /* MKDActionBarNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC93F0420ED4E2C008C85F5 /* Build configuration list for PBXNativeTarget "MKDActionBarNavigationController" */;
+			buildPhases = (
+				DAC93EFA20ED4E2C008C85F5 /* Sources */,
+				DAC93EFB20ED4E2C008C85F5 /* Frameworks */,
+				DAC93EFC20ED4E2C008C85F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKDActionBarNavigationController;
+			productName = MKDActionBarNavigationController;
+			productReference = DAC93EFE20ED4E2C008C85F5 /* libMKDActionBarNavigationController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA0423B720D2E3160055EBCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MKD;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Marcel Dierkes";
+				TargetAttributes = {
+					DA0423BE20D2E3160055EBCD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DAC93EFD20ED4E2C008C85F5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = DA0423BA20D2E3160055EBCD /* Build configuration list for PBXProject "MKDActionBarNavigationController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA0423B620D2E3160055EBCD;
+			productRefGroup = DA0423C020D2E3160055EBCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA0423BE20D2E3160055EBCD /* ExampleApp */,
+				DAC93EFD20ED4E2C008C85F5 /* MKDActionBarNavigationController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA0423BD20D2E3160055EBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA97F3F520D50D8000B488C8 /* Icon.png in Resources */,
+				DA0423CF20D2E3180055EBCD /* LaunchScreen.storyboard in Resources */,
+				DA0423CC20D2E3180055EBCD /* Assets.xcassets in Resources */,
+				DA0423CA20D2E3160055EBCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA0423BB20D2E3160055EBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA31808320EAACE6007E76E7 /* MKDCustomNavigationController.m in Sources */,
+				DA0423D220D2E3180055EBCD /* main.m in Sources */,
+				DA97F3F820D5B32400B488C8 /* MKDDetailViewController.m in Sources */,
+				DA0423DA20D2E4780055EBCD /* MKDMainViewController.m in Sources */,
+				DA0423C420D2E3160055EBCD /* MKDAppDelegate.m in Sources */,
+				DA31808720EAAD99007E76E7 /* MKDTintedActionButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC93EFA20ED4E2C008C85F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC93F0820ED4E63008C85F5 /* MKDActionBar.m in Sources */,
+				DAC93F0220ED4E2C008C85F5 /* MKDActionBarNavigationController.m in Sources */,
+				DAC93F0720ED4E63008C85F5 /* MKDActionButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAC93F0E20ED4FB6008C85F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC93EFD20ED4E2C008C85F5 /* MKDActionBarNavigationController */;
+			targetProxy = DAC93F0D20ED4FB6008C85F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA0423C820D2E3160055EBCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0423C920D2E3160055EBCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA0423CD20D2E3180055EBCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA0423CE20D2E3180055EBCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA0423D320D2E3180055EBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA0423D420D2E3180055EBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA0423D620D2E3180055EBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.MKDActionBarNavigationController.ExampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA0423D720D2E3180055EBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.marcel-dierkes.MKDActionBarNavigationController.ExampleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAC93F0520ED4E2C008C85F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC93F0620ED4E2C008C85F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KESHV9W85;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA0423BA20D2E3160055EBCD /* Build configuration list for PBXProject "MKDActionBarNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0423D320D2E3180055EBCD /* Debug */,
+				DA0423D420D2E3180055EBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA0423D520D2E3180055EBCD /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0423D620D2E3180055EBCD /* Debug */,
+				DA0423D720D2E3180055EBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC93F0420ED4E2C008C85F5 /* Build configuration list for PBXNativeTarget "MKDActionBarNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC93F0520ED4E2C008C85F5 /* Debug */,
+				DAC93F0620ED4E2C008C85F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA0423B720D2E3160055EBCD /* Project object */;
+}
