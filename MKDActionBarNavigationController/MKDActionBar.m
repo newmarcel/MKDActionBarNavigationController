@@ -51,6 +51,8 @@
 
 - (void)configureVisualEffectView
 {
+    self.backgroundColor = UIColor.clearColor;
+    
     UIVisualEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
     UIVisualEffectView *view = [[UIVisualEffectView alloc] initWithEffect:effect];
     view.translatesAutoresizingMaskIntoConstraints = NO;
