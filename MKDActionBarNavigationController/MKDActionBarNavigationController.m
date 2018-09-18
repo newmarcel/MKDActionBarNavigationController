@@ -194,10 +194,15 @@ NS_INLINE BOOL MKDViewControllerSupportsActionButtonHosting(UIViewController *vc
 
 #pragma mark - Changes
 
-- (void)actionButtonItemsDidChange
+- (void)setNeedsActionButtonUpdate
 {
     Auto viewController = self.topViewController;
     [self handleItemChangeForViewController:viewController animated:YES];
+}
+
+- (void)actionButtonItemsDidChange
+{
+    [self setNeedsActionButtonUpdate];
 }
 
 - (void)handleItemChangeForViewController:(UIViewController *)viewController animated:(BOOL)animated

@@ -28,7 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
  Notify the navigation controller that the contents of the view controller's
  `bottomActionButtonItems` property have changed.
  */
-- (void)actionButtonItemsDidChange;
+- (void)actionButtonItemsDidChange API_DEPRECATED_WITH_REPLACEMENT("setNeedsActionButtonUpdate", ios(9.0, 10.0));
+
+/**
+ Notify the navigation controller that the contents of the view controller's
+ `bottomActionButtonItems` property have changed.
+ */
+- (void)setNeedsActionButtonUpdate;
 
 @end
 

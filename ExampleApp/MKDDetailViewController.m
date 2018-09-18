@@ -31,7 +31,7 @@ static NSString * const ShowSegueIdentifier = @"showMore";
     MKDCustomNavigationController *nav = (MKDCustomNavigationController *)self.navigationController;
     
     self.actionButtonsVisible = !self.actionButtonsVisible;
-    [nav actionButtonItemsDidChange];
+    [nav setNeedsActionButtonUpdate];
 }
 
 #pragma mark -
