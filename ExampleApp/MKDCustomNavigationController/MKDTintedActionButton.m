@@ -21,19 +21,19 @@
 @end
 
 @interface MKDTintedActionButton ()
+@property (nonatomic) MKDTintedActionButtonStyle style;
 @end
 
 @implementation MKDTintedActionButton
 
-- (instancetype)initWithFrame:(CGRect)frame
++ (instancetype)buttonWithStyle:(MKDTintedActionButtonStyle)style
 {
-    self = [super initWithFrame:frame];
-    if(self != nil)
-    {
-        [self updateColors];
-        [self configureAppearance];
-    }
-    return self;
+    MKDTintedActionButton *button = [super buttonWithType:UIButtonTypeCustom];
+    button.style = style;
+    [button updateColors];
+    [button configureAppearance];
+    
+    return button;
 }
 
 - (void)awakeFromNib
@@ -69,13 +69,27 @@
 {
     [super setHighlighted:highlighted];
     
-    if(highlighted)
+    if(self.style == MKDTintedActionButtonStyleDefault)
     {
-        self.backgroundColor = self.tintColor.mkd_desaturatedColor;
+        if(highlighted)
+        {
+            self.backgroundColor = self.tintColor.mkd_desaturatedColor;
+        }
+        else if([self isEnabled])
+        {
+            self.backgroundColor = self.tintColor;
+        }
     }
-    else if([self isEnabled])
+    else
     {
-        self.backgroundColor = self.tintColor;
+        if(highlighted)
+        {
+            self.layer.borderColor = self.tintColor.mkd_desaturatedColor.CGColor;
+        }
+        else if([self isEnabled])
+        {
+            self.layer.borderColor = self.tintColor.CGColor;
+        }
     }
 }
 
@@ -83,10 +97,13 @@
 {
     [super setEnabled:enabled];
     
-    if(enabled == NO)
+    if(self.style == MKDTintedActionButtonStyleDefault)
     {
-        self.backgroundColor = self.tintColor.mkd_desaturatedColor;
-        return;
+        if(enabled == NO)
+        {
+            self.backgroundColor = self.tintColor.mkd_desaturatedColor;
+            return;
+        }
     }
     
     [self setHighlighted:[self isHighlighted]];
@@ -107,9 +124,21 @@
 
 - (void)updateColors
 {
-    self.backgroundColor = self.tintColor;
-    
-    [self setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+    if(self.style == MKDTintedActionButtonStyleDefault)
+    {
+        self.backgroundColor = self.tintColor;
+        [self setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+    }
+    else
+    {
+        self.backgroundColor = UIColor.clearColor;
+        [self setTitleColor:self.tintColor forState:UIControlStateNormal];
+        [self setTitleColor:self.tintColor.mkd_desaturatedColor forState:UIControlStateHighlighted];
+        
+        CALayer *layer = self.layer;
+        layer.borderColor = self.tintColor.CGColor;
+        layer.borderWidth = 1.0f;
+    }
 }
 
 @end

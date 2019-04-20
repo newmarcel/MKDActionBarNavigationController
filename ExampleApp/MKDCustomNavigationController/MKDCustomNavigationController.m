@@ -13,18 +13,13 @@
 
 - (UIButton *)configuredActionButtonForStyle:(MKDActionButtonItemStyle)style
 {
-    MKDTintedActionButton *button = [MKDTintedActionButton buttonWithType:UIButtonTypeCustom];
-    
     switch(style)
     {
         case MKDActionButtonItemStylePrimary:
-            break;
+            return [MKDTintedActionButton buttonWithStyle:MKDTintedActionButtonStyleDefault];
         case MKDActionButtonItemStyleSecondary:
-            button.tintColor = [UIColor colorWithWhite:0.74f alpha:1.0f];
-            break;
+            return [MKDTintedActionButton buttonWithStyle:MKDTintedActionButtonStyleOutline];
     }
-    
-    return button;
 }
 
 @end

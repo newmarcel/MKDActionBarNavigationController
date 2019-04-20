@@ -10,10 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, MKDTintedActionButtonStyle) {
+    MKDTintedActionButtonStyleDefault = 0,
+    MKDTintedActionButtonStyleOutline
+};
+
 /**
  A generic button that uses the view's tint color for background and highlight colors.
  */
 @interface MKDTintedActionButton : UIButton
++ (instancetype)buttonWithStyle:(MKDTintedActionButtonStyle)style;
 @end
 
 NS_ASSUME_NONNULL_END
